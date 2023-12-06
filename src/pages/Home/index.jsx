@@ -4,6 +4,8 @@ import Header from "./Header/Header";
 import About from "./About/About";
 import Sermon from "./Sermon/Sermon";
 import WhyUs from "./WhyUs/WhyUs";
+import Services from "./Services/Services";
+import Testimonial from "./Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <About/>
       <Sermon/>
       <WhyUs/>
+      <Testimonial/>
+      <Services/>
     </Layout>
   );
 };
