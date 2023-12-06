@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Box py={{ md: 16 }}>
       <Container maxWidth="lg">
-        <Grid container px={{md:6}}>
+        <Grid container px={{md:6}} alignItems={"center"}>
           <Grid item md={6}>
             <Box width={"350px"}>
               <Typography color={"#ff9800"} fontWeight={500} pt={{md:0,xs:2}}>
