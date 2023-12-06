@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./Header/Header";
 import About from "./About/About";
 import Sermon from "./Sermon/Sermon";
+import WhyUs from "./WhyUs/WhyUs";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <About/>
       <Sermon/>
+      <WhyUs/>
     </Layout>
   );
 };

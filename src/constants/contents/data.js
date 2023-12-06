@@ -21,3 +21,22 @@ export const SERMONS = [
     description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
   },
 ];
+
+export const PRAYERS=[
+    {
+        title:"PEACE WITH GOD",
+        description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+    },
+    {
+        title:"PEACE WITH GOD",
+        description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+    },
+    {
+        title:"PEACE WITH GOD",
+        description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+    },
+    {
+        title:"PEACE WITH GOD",
+        description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+    },
+]
