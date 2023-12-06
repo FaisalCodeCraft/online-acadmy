@@ -8,7 +8,7 @@ const Layout = (props) => {
   return (
     <Box>
       <Box position={"absolute"}>
-        <Navbar />
+        {/* <Navbar /> */}
       </Box>
       <Box>{children}</Box>
       <Footer />

@@ -16,7 +16,7 @@ const About = () => {
                 fontSize={{ md: "3em",sm:"2.3em",xs:"1.8em" }}
                 fontWeight={1000}
                 lineHeight={{md:"50px",xs:"30px"}}
-                width={"260px"}
+                // width={"260px"}
               >
                 Living and Sharing The Gospel
               </Typography>

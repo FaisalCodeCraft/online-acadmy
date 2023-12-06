@@ -24,7 +24,7 @@ const Header = () => {
         sx={{ transform: "translateY(-50% -50%" }}
       >
         <Container maxWidth="lg">
-          <Grid container justifyContent={"center"} alignItems={"center"} px={4}>
+          <Grid container justifyContent={"center"} alignItems={"center"} px={{md:4}}>
             <Grid item md={7}>
               <Box color={{md:"white"}} width={"300px"} pt={1}>
                 <Typography>WELCOME TO BYFAITH CHURCH</Typography>
@@ -59,12 +59,12 @@ const Header = () => {
                 </Button>
               </Box>
             </Grid>
-            <Grid item md={5} pl={5}>
-              <Box height={{md:"330px",sm:"280px",xs:"230px"}}>
+            <Grid item md={5}  pl={{md:5}}>
+              <Box height={{md:"330px",sm:"280px",xs:"210px"}} width={{md:"400px",sm:"280px",xs:"100%"}}>
               <img
                 src="https://preview.colorlib.com/theme/byfaith/images/about_1.jpg"
                 alt="Group"
-                style={{width:"400px",height:"100%"}}
+                style={{width:"100%",height:"100%"}}
               />
               </Box>
             </Grid>
