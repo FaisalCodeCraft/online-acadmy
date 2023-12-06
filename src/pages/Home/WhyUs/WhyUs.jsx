@@ -4,7 +4,7 @@ import React from "react";
 
 const WhyUs = () => {
   return (
-    <Box bgcolor={"rgb(0, 72, 96)"} color={"white"} py={{ md: 6 }} px={{md:6}}>
+    <Box bgcolor={"rgb(0, 72, 96)"} color={"white"} py={{ md: 6,xs:3 }} px={{md:6}}>
       <Container maxWidth="lg">
         <Typography color={"#ff9800"} fontWeight={500} pt={2}>
           WHY US

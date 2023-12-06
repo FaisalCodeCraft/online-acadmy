@@ -8,7 +8,7 @@ const About = () => {
         <Grid container px={{md:6}} alignItems={"center"}>
           <Grid item md={6}>
             <Box width={{md:"350px"}}>
-              <Typography color={"#ff9800"} fontWeight={500} pt={{md:0,xs:4}}>
+              <Typography color={"#ff9800"} fontWeight={500} pt={{md:0,xs:8}}>
                 ABOUT US
               </Typography>
               <Typography
