@@ -6,7 +6,7 @@ const Sermon = () => {
   return (
     <Box pb={{md:12}}>
       <Container maxWidth="lg">
-        <Box px={{md:6,xs:1}} textAlign={"center"} py={{md:6,xs:1}} pt={{md:0,xs:4}}>
+        <Box px={{md:6,xs:1}} textAlign={"center"} py={{md:6,xs:2}} pt={{md:0,xs:9}}>
           <Typography color={"#ff9800"} fontWeight={500}>
             SERMONS
           </Typography>
