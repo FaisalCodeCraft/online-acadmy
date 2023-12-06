@@ -4,18 +4,18 @@ import React from "react";
 
 const WhyUs = () => {
   return (
-    <Box bgcolor={"rgb(0, 72, 96)"} color={"white"} py={{ md: 6 }} px={6}>
+    <Box bgcolor={"rgb(0, 72, 96)"} color={"white"} py={{ md: 6 }} px={{md:6}}>
       <Container maxWidth="lg">
-        <Typography color={"#ff9800"} fontWeight={500}>
+        <Typography color={"#ff9800"} fontWeight={500} pt={2}>
           WHY US
         </Typography>
-        <Grid container spacing={9} alignItems={"center"}>
+        <Grid container spacing={{md:9}} alignItems={"center"}>
           <Grid item md={6}>
-            <Box py={2}>
+            <Box py={{md:2}}>
               <Typography
                 lineHeight={"45px"}
                 py={1}
-                width={"380px"}
+                width={{md:"380px",sm:"100%"}}
                 fontSize={{ md: "2.6em" }}
                 fontWeight={900}
               >
@@ -26,11 +26,12 @@ const WhyUs = () => {
                 src="https://preview.colorlib.com/theme/byfaith/images/img_1.jpg"
                 alt="Student "
                 width={"100%"}
-                style={{ padding: { md: "4em 0" } }}
+                style={{ padding: { md: "4em 0",sm: "2.5em 0",xs: "1.5em 0" } }}
               />
             </Box>
           </Grid>
           <Grid item md={6} >
+            <Container>
             <Typography pt={{md:4}}>
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts. Separated
@@ -40,12 +41,12 @@ const WhyUs = () => {
             <Grid
               container
               mt={{ md: 2 }}
-           
+            rowSpacing={4}
             >
               {PRAYERS.map((item) => (
-                <Grid item md={6}  sx={{"&:nth-child(even)":{pl:6}}}>
-                  <Typography>{item.title}</Typography>
-                  <Typography>{item.description}</Typography>
+                <Grid item md={6}  sx={{"&:nth-child(even)":{pl:{md:3}}}}>
+                  <Typography fontWeight={500}>{item.title}</Typography>
+                  <Typography color={"gray"} fontSize={"14px"}>{item.description}</Typography>
                 </Grid>
               ))}
               <Button
@@ -66,7 +67,9 @@ const WhyUs = () => {
               >
                 SEND US YOUR PRAYER REQUEST
               </Button>
+
             </Grid>
+            </Container>
           </Grid>
         </Grid>
       </Container>

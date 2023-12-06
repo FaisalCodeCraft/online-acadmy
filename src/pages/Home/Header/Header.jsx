@@ -18,23 +18,23 @@ const Header = () => {
         />
       </Box>
       <Box
-        position={"absolute"}
-        top={"23%"}
+        position={{md:"absolute"}}
+        top={{md:"23%"}}
         width={"100%"}
         sx={{ transform: "translateY(-50% -50%" }}
       >
         <Container maxWidth="lg">
           <Grid container justifyContent={"center"} alignItems={"center"} px={4}>
             <Grid item md={7}>
-              <Box color={"white"} width={"300px"}>
+              <Box color={{md:"white"}} width={"300px"} pt={1}>
                 <Typography>WELCOME TO BYFAITH CHURCH</Typography>
                 <Typography
-                  py={3}
+                  py={{md:3}}
                   fontSize={{ md: "2.7em" }}
                   fontWeight={900}
                   lineHeight={"45px"}
                 >
-                  Oh Safe To the Rock That Is Higher Than I
+                  Oh Safe To the Rock That Is Higher Than 
                 </Typography>
                 <Typography>
                   Far far away, behind the word mountains, far from the
@@ -60,11 +60,13 @@ const Header = () => {
               </Box>
             </Grid>
             <Grid item md={5} pl={5}>
+              <Box height={{md:"330px",sm:"280px",xs:"230px"}}>
               <img
                 src="https://preview.colorlib.com/theme/byfaith/images/about_1.jpg"
                 alt="Group"
-                style={{width:"400px",height:"330px"}}
+                style={{width:"400px",height:"100%"}}
               />
+              </Box>
             </Grid>
           </Grid>
         </Container>

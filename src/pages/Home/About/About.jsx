@@ -5,17 +5,17 @@ const About = () => {
   return (
     <Box py={{ md: 16 }}>
       <Container maxWidth="lg">
-        <Grid container px={6}>
+        <Grid container px={{md:6}}>
           <Grid item md={6}>
             <Box width={"350px"}>
-              <Typography color={"#ff9800"} fontWeight={500}>
+              <Typography color={"#ff9800"} fontWeight={500} pt={{md:0,xs:2}}>
                 ABOUT US
               </Typography>
               <Typography
-                py={4}
-                fontSize={{ md: "3em" }}
+                py={{md:4,sm:3,xs:2}}
+                fontSize={{ md: "3em",sm:"2.3em",xs:"1.8em" }}
                 fontWeight={1000}
-                lineHeight={"50px"}
+                lineHeight={{md:"50px",xs:"30px"}}
                 width={"260px"}
               >
                 Living and Sharing The Gospel
