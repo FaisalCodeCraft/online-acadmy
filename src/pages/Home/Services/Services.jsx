@@ -21,7 +21,7 @@ const Services = () => {
           </Typography>
           <Grid container spacing={4}>
             {SERVICES.map((item) => (
-              <Grid item md={4}>
+              <Grid item md={4} sm={6}>
                 <img
                   src={item.icon}
                   alt="logoIcon"

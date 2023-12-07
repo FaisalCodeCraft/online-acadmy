@@ -1,0 +1,158 @@
+:root {
+  --up: 3; /* Number of visible cards */
+  --card-margin: 16px; /* Margin around each card */
+  --card-shadow: rgba(46, 49, 52, 0.4); /* Card box shadow color */
+  --color-white: #fff; /* White color */
+  --color-lightgrey: #ccc; /* Light grey color */
+  --color-ui: #999; /* UI color */
+  --color-ui-hover: #666; /* UI color on hover */
+  --cardWidth: calc(225vw / var(--up)); /* Width of each card */
+  --carouselWidth: calc(
+    var(--cardWidth) * var(--num)
+  ); /* Width of the entire carousel */
+  --carouselLeftMargin: calc(
+    4vw - var(--cardWidth)
+  ); /* Left margin of the carousel */
+
+  /* Media query for small screens (e.g., mobile) */
+  @media screen and (max-width: 900px) {
+    --up: 1; /* Adjust the number of visible cards for small screens */
+  }
+}
+
+/* Styles for the carousel container */
+.carouselwrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Styles for the carousel itself */
+.carousel {
+  width: var(--carouselWidth);
+  margin: .5em 0 0 var(--carouselLeftMargin);
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+
+  /* Styles for animation when shifting to the previous card */
+  &.prev {
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+    animation-name: prev;
+  }
+
+  /* Styles for animation when shifting to the next card */
+  &.next {
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+    animation-name: next;
+  }
+
+  /* Styles for each card */
+  li {
+    padding: 50px;
+    text-align: center;
+    width: calc(var(--cardWidth) - var(--card-margin) * 2);
+    box-sizing: border-box;
+  }
+}
+
+/* Styles for the UI (prev/next buttons) */
+.ui {
+  transform: translateY(-50%);
+  display: flex;
+  width: calc(100% - var(--card-margin) * 2);
+  justify-content: center;
+  padding: var(--card-margin);
+  z-index: 100;
+  margin-top: 30px;
+
+}
+
+
+  /* Styles for the prev/next buttons */
+  button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff9800;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 20px;
+    color: var(--color-white);
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.25);
+    border: 0;
+    margin: 0 4px;
+    transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    /* Styles on hover */
+    &:hover {
+      background-color: white;
+      color: #ff9800;
+    }
+
+    /* Styles on focus */
+    &:focus {
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 1);
+    }
+  }
+
+/* Styles for each card */
+/* .card {
+  box-shadow: 0px 1px 2px 0px var(--card-shadow);
+  margin: var(--card-margin);
+  background: var(--color-white);
+  padding: 1em;
+  width: 550px;
+  height: 350px;
+  text-align: center;
+} */
+
+/* Styles for Material Icons */
+.material-icons {
+  font-size: 1.3em;
+  line-height: 1px;
+}
+.description {
+  font-style: italic;
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+/* Styles for the paragraph inside the card */
+.person {
+  font-family: "Open Sans Condensed", sans-serif;
+  /* font-size: 1.4rem; */
+  margin-bottom: 0;
+  color: gray;
+}
+
+.personImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Keyframes for the animation when shifting to the next card */
+@keyframes next {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(0px + var(--cardWidth)));
+  }
+}
+
+/* Keyframes for the animation when shifting to the previous card */
+@keyframes prev {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(0px - var(--cardWidth)));
+  }
+}

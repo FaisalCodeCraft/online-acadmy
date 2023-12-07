@@ -16,7 +16,7 @@ const Sermon = () => {
         </Box>
         <Grid container spacing={{md:4,sm:3,xs:2}} px={{md:3}}>
           {SERMONS.map((item) => (
-            <Grid item md={4}>
+            <Grid item md={4} sm={6}>
               <img
                 src={item.poster}
                 alt="students"

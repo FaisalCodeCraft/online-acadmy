@@ -10,7 +10,7 @@ const WhyUs = () => {
           WHY US
         </Typography>
         <Grid container spacing={{md:9}} alignItems={"center"}>
-          <Grid item md={6}>
+          <Grid item md={6} >
             <Box py={{md:2}}>
               <Typography
                 lineHeight={"45px"}

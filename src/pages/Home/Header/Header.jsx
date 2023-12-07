@@ -7,7 +7,7 @@ const Header = () => {
       <Box
         position={"relative"}
         width={"100%"}
-        height={{ md: "600px", sm: "500px", xs: "200px" }}
+        height={{ md: "600px", sm: "450px", xs: "200px" }}
       >
         <img
           src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -18,19 +18,19 @@ const Header = () => {
         />
       </Box>
       <Box
-        position={{md:"absolute"}}
-        top={{md:"23%"}}
+        position={{md:"absolute",sm:"absolute"}}
+        top={{md:"23%",sm:"18%"}}
         width={"100%"}
         sx={{ transform: "translateY(-50% -50%" }}
       >
         <Container maxWidth="lg">
           <Grid container justifyContent={"center"} alignItems={"center"} px={{md:4}}>
-            <Grid item md={7}>
-              <Box color={{md:"white"}} width={"300px"} pt={1}>
+            <Grid item md={7} sm={6}>
+              <Box color={{md:"white",sm:"white"}} width={"300px"} pt={1}>
                 <Typography>WELCOME TO BYFAITH CHURCH</Typography>
                 <Typography
                   py={{md:3}}
-                  fontSize={{ md: "2.7em" }}
+                  fontSize={{ md: "2.7em",sm:"2em" }}
                   fontWeight={900}
                   lineHeight={"45px"}
                 >

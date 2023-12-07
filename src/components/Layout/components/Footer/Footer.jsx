@@ -60,38 +60,38 @@ const Footer = () => {
               <ListItem>+1(123)-456-7890</ListItem>
               <ListItem>Contact us</ListItem>
             </List>
-            <Box display={"flex"}>
-            <Button sx={btnStyle} >
+            <Box display={"flex"} flexWrap={"wrap"}>
+              <Button sx={btnStyle} >
                 <Instagram
 
                   sx={style}
                 />
               </Button>
-            <Button sx={btnStyle} >
+              <Button sx={btnStyle} >
                 <Facebook
 
                   sx={style}
                 />
               </Button>
-            <Button sx={btnStyle} >
+              <Button sx={btnStyle} >
                 <Twitter
 
                   sx={style}
                 />
               </Button>
-            <Button sx={btnStyle} >
+              <Button sx={btnStyle} >
                 <LinkedIn
 
                   sx={style}
                 />
               </Button>
-            <Button sx={btnStyle} >
+              <Button sx={btnStyle} >
                 <Pinterest
 
                   sx={style}
                 />
               </Button>
-            <Button  >
+              <Button  sx={btnStyle}>
                 <Language
 
                   sx={style}
@@ -108,20 +108,21 @@ const Footer = () => {
 export default Footer;
 
 
-const style={
+const style = {
   "&:hover": {
     bgcolor: "#ff9800",
     color: "white",
 
     boxShadow: "none",
   },
-  p: "10px ",
+  p: "8px ",
   borderRadius: "12px",
   bgcolor: "white",
   color: "darkGray",
 }
-const btnStyle={  mr: "-15px", "&:hover": {
+const btnStyle = {
+  mr: "-15px",
+  p:"0",
   bgcolor: "transparent",
-
-  boxShadow: "none",
-}, }
+    boxShadow: "none",
+}
