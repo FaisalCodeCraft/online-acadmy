@@ -9,9 +9,23 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import { Button, Container, Link, Typography } from "@mui/material";
 import { AccountCircle } from "@mui/icons-material";
+import ModeToggle from "components/ModeToggle/ModeToggle";
+import { ThemeContext } from "context";
 
 const Navbar = () => {
+  const { mode } = React.useContext(ThemeContext)
+
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [bgColor, setBgColor] = React.useState(false)
+  const changeBgColor = () => {
+    if (window.scrollY >= 500) {
+      setBgColor(true)
+    } else (
+      setBgColor(false)
+    )
+  }
+  window.addEventListener("scroll", changeBgColor)
+
 
   const handleDrawerToggle = (_) => setMobileOpen((prevState) => !prevState);
   // function handleDrawerToggle(){
@@ -59,8 +73,8 @@ const Navbar = () => {
   );
 
   return (
-    <Box>
-      <AppBar component="nav" sx={{ bgcolor: "transparent" ,boxShadow:"none"}}>
+    <Box >
+      <AppBar component="nav" sx={{ bgcolor: bgColor && mode == "light" ? "black" : bgColor && mode == "dark" ? "white" : "transparent", color:mode==="dark"?"black":"white ",  boxShadow: "none" }}>
         <Container maxWidth={"lg"}>
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             <IconButton
@@ -68,7 +82,7 @@ const Navbar = () => {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{  display: { sm: "none" } ,color:"white"}}
+              sx={{ display: { sm: "none" }, color: "white" }}
             >
               <MenuIcon />
             </IconButton>
@@ -78,14 +92,14 @@ const Navbar = () => {
               sx={{
                 display: { xs: "none", sm: "none", md: "block" },
                 flexGrow: 1,
-                color: "white",
+                 color:mode==="dark"?"black":" white ",
               }}
               width={"100%"}
             >
               <ListItem>
                 <Link
                   href="/Home"
-                  sx={{ color: "white", textDecoration: "none",fontSize:"1.4em",fontWeight:700 }}
+                  sx={{  color:mode==="dark"?"black":" white", textDecoration: "none", fontSize: "1.4em", fontWeight: 700 }}
                 >
                   ByFaith
                 </Link>
@@ -97,9 +111,12 @@ const Navbar = () => {
               }}
             >
               <ListItem>
+                <ModeToggle />
+              </ListItem>
+              <ListItem>
                 <Link
                   href="/About"
-                  sx={{ color: "white", textDecoration: "none" }}
+                  sx={{  color:mode==="dark"?"black":"white ", textDecoration: "none" }}
                 >
                   About
                 </Link>
@@ -107,7 +124,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Sermon"
-                  sx={{ color: "white", textDecoration: "none" }}
+                  sx={{  color:mode==="dark"?"black":"white ", textDecoration: "none" }}
                 >
                   Sermon
                 </Link>
@@ -115,7 +132,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Ministries"
-                  sx={{ color: "white", textDecoration: "none" }}
+                  sx={{  color:mode==="dark"?"black":"white ", textDecoration: "none" }}
                 >
                   Ministries
                 </Link>
@@ -123,7 +140,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Events"
-                  sx={{ color: "white", textDecoration: "none" }}
+                  sx={{  color:mode==="dark"?"black":"white ", textDecoration: "none" }}
                 >
                   Events
                 </Link>
@@ -131,7 +148,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Contact"
-                  sx={{ color: "white", textDecoration: "none" }}
+                  sx={{  color:mode==="dark"?"black":"white ", textDecoration: "none" }}
                 >
                   Contact
                 </Link>
@@ -150,8 +167,8 @@ const Navbar = () => {
           }}
           sx={{
             display: { xs: "block", sm: "none" },
-           
-            "& .MuiDrawer-paper": { boxSizing: "border-box", width:drawerWidth, }
+
+            "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth, }
           }}
         >
           {drawer}
@@ -163,4 +180,4 @@ const Navbar = () => {
 };
 export default Navbar;
 
-const drawerWidth=200;
+const drawerWidth = 200;
