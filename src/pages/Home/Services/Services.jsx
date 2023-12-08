@@ -39,6 +39,7 @@ const Services = () => {
                       color: "#ff9800",
                       borderRadius: "28px",
                       p: "10px 20px",
+                      boxShadow:0,
                       fontSize: "small",
                       "&:hover": {
                         color: "#ff9999",

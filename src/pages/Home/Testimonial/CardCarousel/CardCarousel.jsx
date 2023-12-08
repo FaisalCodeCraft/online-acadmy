@@ -5,9 +5,9 @@ import { Box } from "@mui/material";
 import { ThemeContext } from "context";
 
 // Card component for slider
-export const Card = ({ name, copy, title, profile ,person,mode}) => (
+export const Card = ({ name, copy, title, profile, person, mode }) => (
 
-  <Box width={{md:"520px",sm:"400px",xs:"300px" }} boxShadow={3} m={{md:3,sm:1}} p={3} textAlign={"center"}  sx={{backgroundColor:mode==="light"?"white":"black"}}>
+  <Box width={{ md: "520px", sm: "400px", xs: "300px" }} boxShadow={3} m={{ md: 3, sm: 1 }} p={3} textAlign={"center"} sx={{ backgroundColor: mode === "light" ? "white" : "black" }}>
     <h4>{title}</h4>
     <p className="description">{copy}</p>
     <img className="personImg" src={profile} alt="Man" />
@@ -20,7 +20,7 @@ export const Card = ({ name, copy, title, profile ,person,mode}) => (
 
 
 const CardCarousel = () => {
-  const{mode} = useContext(ThemeContext)
+  const { mode } = useContext(ThemeContext)
 
   const [moveClass, setMoveClass] = useState('');
   const [carouselItems, setCarouselItems] = useState(items);
@@ -53,11 +53,11 @@ const CardCarousel = () => {
   return (
     <div className="carouselwrapper module-wrapper">
 
-      <ul  onAnimationEnd={handleAnimationEnd} className={`${moveClass} carousel `}>
+      <ul onAnimationEnd={handleAnimationEnd} className={`${moveClass} carousel `}>
         {carouselItems.map((t, index) =>
           <Card
             key={t.copy + index} name={t.name} copy={t.copy} title={t.title}
-             profile={t.profile} person={t.person} mode={mode}/>
+            profile={t.profile} person={t.person} mode={mode} />
         )}
       </ul>
       <div className="ui" >

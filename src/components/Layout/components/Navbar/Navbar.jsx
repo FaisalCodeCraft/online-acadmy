@@ -74,7 +74,7 @@ const Navbar = () => {
 
   return (
     <Box >
-      <AppBar component="nav" sx={{ bgcolor: bgColor && mode == "light" ? "black" : bgColor && mode == "dark" ? "white" : "transparent", color:mode==="dark"?"black":"white ",  boxShadow: "none" }}>
+      <AppBar component="nav" sx={{ bgcolor: bgColor && mode == "light" ? "black" : bgColor && mode == "dark" ? "white" : "transparent", color: mode === "dark" ? "black" : "white ", boxShadow: "none" }}>
         <Container maxWidth={"lg"}>
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             <IconButton
@@ -92,14 +92,14 @@ const Navbar = () => {
               sx={{
                 display: { xs: "none", sm: "none", md: "block" },
                 flexGrow: 1,
-                 color:mode==="dark"?"black":" white ",
+                color: mode === "dark" ? "black" : " white ",
               }}
               width={"100%"}
             >
               <ListItem>
                 <Link
                   href="/Home"
-                  sx={{  color:mode==="dark"?"black":" white", textDecoration: "none", fontSize: "1.4em", fontWeight: 700 }}
+                  sx={{ color: mode === "dark" ? "black" : " white", textDecoration: "none", fontSize: "1.4em", fontWeight: 700 }}
                 >
                   ByFaith
                 </Link>
@@ -116,7 +116,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/About"
-                  sx={{  color:mode==="dark"?"black":"white ", textDecoration: "none" }}
+                  sx={{ color: mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   About
                 </Link>
@@ -124,7 +124,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Sermon"
-                  sx={{  color:mode==="dark"?"black":"white ", textDecoration: "none" }}
+                  sx={{ color: mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Sermon
                 </Link>
@@ -132,7 +132,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Ministries"
-                  sx={{  color:mode==="dark"?"black":"white ", textDecoration: "none" }}
+                  sx={{ color: mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Ministries
                 </Link>
@@ -140,7 +140,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Events"
-                  sx={{  color:mode==="dark"?"black":"white ", textDecoration: "none" }}
+                  sx={{ color: mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Events
                 </Link>
@@ -148,7 +148,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Contact"
-                  sx={{  color:mode==="dark"?"black":"white ", textDecoration: "none" }}
+                  sx={{ color: mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Contact
                 </Link>

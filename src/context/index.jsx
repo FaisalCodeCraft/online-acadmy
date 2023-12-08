@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react'
-import "./theme.css"
+import { Box } from '@mui/material'
 
 
 export const ThemeContext = createContext()
@@ -11,10 +11,8 @@ const ThemeProvider = ({children}) => {
     }
     return (
         <ThemeContext.Provider value={{ mode, setMode, ToggleMode }}>
-            <div className={`theme ${mode}`}>
-
-            {children}
-            </div>
+<Box sx={{bgcolor:mode==="light"?"rgb(255, 248, 236)" :"black",color:mode=== "light" ? "black" :"white"}}>{children}</Box>
+            
         </ThemeContext.Provider>
     )
 }
