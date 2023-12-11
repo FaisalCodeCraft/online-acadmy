@@ -61,10 +61,10 @@ const CardCarousel = () => {
         )}
       </ul>
       <div className="ui" >
-        <button onClick={() => setMoveClass('next')} className="prev">
+        <button onClick={() => setMoveClass('next')} className="prev cardBtn">
           <span className="material-icons">PREV</span>
         </button>
-        <button onClick={() => setMoveClass('prev')} className="next">
+        <button onClick={() => setMoveClass('prev')} className="next cardBtn">
           <span className="material-icons">NEXT</span>
         </button>
       </div>

@@ -1,18 +1,18 @@
 import { Box, Button, Container, Divider, Grid, Typography, useMediaQuery } from "@mui/material";
-import { SERMONS } from "constants/contents/data";
+import { COURSES } from "constants/contents/data";
 import { ThemeContext } from "context";
 import React, { useContext } from "react";
 
-const Sermon = () => {
+const Courses = () => {
 
   const { mode } = useContext(ThemeContext)
 
   return (
     <React.Fragment>
-      <Divider sx={{ backgroundColor: 'gray', mb: 6, mx: 10 }} />
-      <Box pb={8} >
+      <Divider sx={{ backgroundColor: 'gray', mb: 6, mx: {md:10,xs:2},mt:{md:0,sm:3,xs:6} }} />
+      <Box pb={8} id="courses">
         <Container maxWidth="md" sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-          <Box px={{ xs: 1 }} textAlign={"center"} py={{ md: 6, xs: 2 }} pt={{ md: 0, xs: 9 }}>
+          <Box px={{ xs: 1 }} textAlign={"center"} py={{ md: 6, xs: 2 }} >
             <Typography color={"#ff9800"} fontWeight={500}>
               COURSES
             </Typography>
@@ -21,7 +21,7 @@ const Sermon = () => {
             </Typography>
           </Box>
           <Grid container spacing={{ md: 3, sm: 3, xs: 2 }}>
-            {SERMONS.map((item) => (
+            {COURSES.map((item) => (
               <Grid item md={item.grid} sm={6} xs={12} display={{sm:item?.id?"flex":"none",md:'flex'}}>
                 {item?.title && <Box bgcolor={"black"} borderRadius={"50%"} position={"relative"} display={"flex"}  alignItems={"center"} justifyContent={"center"} width={"100%"} height={{ md: "200px", xs: '250px',sm:"300px" }} >
                   <Box
@@ -51,4 +51,4 @@ const Sermon = () => {
   );
 };
 
-export default Sermon;
+export default Courses;

@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <Box >
+    <Box id="home">
       <Box
         position={"relative"}
         width={"100%"}

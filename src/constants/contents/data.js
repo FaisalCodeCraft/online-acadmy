@@ -1,4 +1,4 @@
-export const SERMONS = [
+export const COURSES = [
   {
     grid:1.5
   },
@@ -104,7 +104,7 @@ export const SERMONS = [
 
 ];
 
-export const PRAYERS = [
+export const WHY_US = [
   {
     id: 1,
     title: "Excellence Online",

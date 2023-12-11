@@ -1,10 +1,10 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import { PRAYERS } from "constants/contents/data";
+import {  WHY_US } from "constants/contents/data";
 import React from "react";
 
 const WhyUs = () => {
   return (
-    <Box bgcolor={"rgb(0, 72, 96)"} color={"white"} py={{ md: 6,xs:3 }} px={{md:6}}>
+    <Box bgcolor={"rgb(0, 72, 96)"} color={"white"} py={{ md: 6,xs:3 }} px={{md:6}} id="whyUs">
       <Container maxWidth="lg">
         <Typography color={"#ff9800"} fontWeight={500} pt={2}>
           WHY US
@@ -41,7 +41,7 @@ const WhyUs = () => {
               mt={{ md: 2 }}
             rowSpacing={4}
             >
-              {PRAYERS.map((item) => (
+              {WHY_US.map((item) => (
                 <Grid item md={6}  sx={{"&:nth-child(even)":{pl:{md:3}}}}>
                   <Typography fontWeight={500}>{item.title}</Typography>
                   <Typography color={"gray"} fontSize={"14px"}>{item.description}</Typography>

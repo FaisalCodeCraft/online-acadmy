@@ -13,7 +13,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box bgcolor={"rgb(249, 239, 206)"} py={8} px={{ md: 4 }}>
+    <Box bgcolor={"rgb(249, 239, 206)"} py={8} px={{ md: 4 }} id="contact">
       <Container maxWidth>
         <Grid container spacing={4}>
           <Grid item md={4}>
@@ -22,9 +22,8 @@ const Footer = () => {
                 CONTACT
               </ListItem>
               <ListItem>43 Raymouth Rd. Baltemoer, London 3910</ListItem>
-              <ListItem>+1(123)-456-7890</ListItem>
-              <ListItem>+1(123)-456-7890</ListItem>
-              <ListItem>info@mydomain.com</ListItem>
+              <ListItem>+447522063381</ListItem>
+              <ListItem>Basfax11@gmail.com</ListItem>
             </List>
           </Grid>
           <Grid item md={1.5}>
@@ -53,7 +52,7 @@ const Footer = () => {
           <Grid item md={4}>
             <List sx={{ color: "darkGray" }}>
               <ListItem sx={{ color: "black", fontWeight: 700 }}>
-                LINLS
+                LINKS
               </ListItem>
               <ListItem>Our Vision</ListItem>
               <ListItem>About us</ListItem>
@@ -114,7 +113,6 @@ const style = {
     bgcolor: "#ff9800",
     color: "white",
 
-    boxShadow: "none",
   },
   p: "8px ",
   borderRadius: "12px",
@@ -123,7 +121,4 @@ const style = {
 }
 const btnStyle = {
   mr: "-15px",
-  p:"0",
-  bgcolor: "transparent",
-    boxShadow: "none",
 }

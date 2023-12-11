@@ -11,6 +11,8 @@ import { Button, Container, Link, Typography } from "@mui/material";
 import { AccountCircle } from "@mui/icons-material";
 import ModeToggle from "components/ModeToggle/ModeToggle";
 import { ThemeContext } from "context";
+import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
   const { mode } = React.useContext(ThemeContext)
@@ -42,6 +44,9 @@ const Navbar = () => {
   //   setMobileOpen((prevState) => !prevState);
   // }
 
+ 
+
+
   const drawer = (
     // toggle for small screen
     <Box
@@ -52,30 +57,36 @@ const Navbar = () => {
       <List>
         <ListItem>
           <Link
-            href="/mount__sleet"
+          
+            href="/Home"
             sx={{ color: "black", textDecoration: "none" }}
           >
             Home
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="/About" sx={{ color: "black", textDecoration: "none" }}>
+          <Link href="#about" sx={{ color: "black", textDecoration: "none" }}>
             About
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="/Trails" sx={{ color: "black", textDecoration: "none" }}>
-            Trails
+          <Link href="#courses" sx={{ color: "black", textDecoration: "none" }}>
+            Courses
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="/News" sx={{ color: "black", textDecoration: "none" }}>
-            News
+          <Link href="#whyUS" sx={{ color: "black", textDecoration: "none" }}>
+           WhyUs
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="/Contact" sx={{ color: "black", textDecoration: "none" }}>
-            Home
+          <Link href="#services" sx={{ color: "black", textDecoration: "none" }}>
+            Services
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="#contact" sx={{ color: "black", textDecoration: "none" }}>
+            Contact
           </Link>
         </ListItem>
       </List>
@@ -125,7 +136,7 @@ const Navbar = () => {
               </ListItem>
               <ListItem>
                 <Link
-                  href="/About"
+                  href="#about"
                   sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   About
@@ -133,31 +144,31 @@ const Navbar = () => {
               </ListItem>
               <ListItem>
                 <Link
-                  href="/Sermon"
+                  href="#courses"
                   sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
-                  Sermon
+                  Courses
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
-                  href="/Ministries"
+                  href="#whyUs"
                   sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
-                  Ministries
+                  WhyUs
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
-                  href="/Events"
+                  href="#services"
                   sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
-                  Events
+                  Services
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
-                  href="/Contact"
+                  href="#contact"
                   sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Contact

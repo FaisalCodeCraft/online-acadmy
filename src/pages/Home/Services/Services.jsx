@@ -4,7 +4,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <Box pt={{ md: 12, sm: 7, xs: 6 }}>
+    <Box pt={{ md: 12, sm: 7, xs: 6 }} id="services">
     <Box px={{ md: 6 }} >
       <Container maxWidth="lg" sx={{ bgcolor: "white" }}>
         <Box textAlign={"center"} p={"6em 20px"}>

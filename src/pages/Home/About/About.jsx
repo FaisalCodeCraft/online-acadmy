@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <Box py={{ md: 16 }}>
+    <Box py={{ md: 16 }} id="about">
       <Container maxWidth="lg">
         <Grid container px={{ md: 6 }} alignItems={"center"}>
           <Grid item md={6}>
