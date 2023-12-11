@@ -57,7 +57,8 @@ const Footer = () => {
               </ListItem>
               <ListItem>Our Vision</ListItem>
               <ListItem>About us</ListItem>
-              <ListItem>+1(123)-456-7890</ListItem>
+              <ListItem>+447522063381</ListItem>
+              <ListItem>Basfax11@gmail.com</ListItem>
               <ListItem>Contact us</ListItem>
             </List>
             <Box display={"flex"} flexWrap={"wrap"}>

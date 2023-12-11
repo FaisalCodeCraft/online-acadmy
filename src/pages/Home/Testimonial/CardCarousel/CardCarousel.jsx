@@ -7,12 +7,12 @@ import { ThemeContext } from "context";
 // Card component for slider
 export const Card = ({ name, copy, title, profile, person, mode }) => (
 
-  <Box width={{ md: "520px", sm: "400px", xs: "300px" }} boxShadow={3} m={{ md: 3, sm: 1 }} p={3} textAlign={"center"} sx={{ backgroundColor: mode === "light" ? "white" : "black" }}>
-    <h4>{title}</h4>
+  <Box width={{ md: "520px", sm: "400px", xs: "300px" }}  boxShadow={mode==="dark"?"3px 3px 5px 5px rgba(255,255,255,0.35)":3} m={{ md: 3, sm: 1 }} p={3} textAlign={"center"} sx={{ backgroundColor: mode === "light" ? "white" : "black" }}>
+   <div className="card"> <h4>{title}</h4>
     <p className="description">{copy}</p>
     <img className="personImg" src={profile} alt="Man" />
     <h4 className="material-icons">{name}</h4>
-    <p className="person">{person}</p>
+    <p className="person">{person}</p></div>
   </Box>
 );
 
@@ -62,10 +62,10 @@ const CardCarousel = () => {
       </ul>
       <div className="ui" >
         <button onClick={() => setMoveClass('next')} className="prev">
-          <span className="material-icons">NEXT</span>
+          <span className="material-icons">PREV</span>
         </button>
         <button onClick={() => setMoveClass('prev')} className="next">
-          <span className="material-icons">PREV</span>
+          <span className="material-icons">NEXT</span>
         </button>
       </div>
     </div>

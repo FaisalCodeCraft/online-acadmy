@@ -1,54 +1,133 @@
 export const SERMONS = [
   {
+    grid:1.5
+  },
+  {
+    grid:3,
     id: 1,
     poster: "https://preview.colorlib.com/theme/byfaith/images/img_1.jpg",
     date: "15 Jan 2020 • By Pastor Campbell",
-    title: "Living and Sharing The Gospel ",
+    title: "Basic training ",
     description:
       "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
   },
   {
-    id: 1,
+    grid:3,
+    id: 2,
     poster: "https://preview.colorlib.com/theme/byfaith/images/img_2.jpg",
     date: "15 Jan 2020 • By Pastor Campbell",
-    title: "Living and Sharing The Gospel ",
+    title: " Approaching the customer",
     description:
       "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
   },
   {
-    id: 1,
+    grid:3,
+    id: 3,
     poster: "https://preview.colorlib.com/theme/byfaith/images/img_3.jpg",
     date: "15 Jan 2020 • By Pastor Campbell",
-    title: "Living and Sharing The Gospel ",
+    title: "Overcoming objection, rejections",
     description:
       "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
   },
+  {
+    grid:1.5
+  },
+  {
+    grid:3,
+    id: 4,
+    poster: "https://images.pexels.com/photos/5303551/pexels-photo-5303551.jpeg?auto=compress&cs=tinysrgb&w=600",
+    date: "15 Jan 2020 • By Pastor Campbell",
+    title: "Selling to a group",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+  },
+  {
+    grid:3,
+    id: 5,
+    poster: "https://images.pexels.com/photos/3184170/pexels-photo-3184170.jpeg?auto=compress&cs=tinysrgb&w=600",
+    date: "15 Jan 2020 • By Pastor Campbell",
+    title: "Selling to couples",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+  },
+  {
+    grid:3,
+    id: 6,
+    poster: "https://images.pexels.com/photos/4144225/pexels-photo-4144225.jpeg?auto=compress&cs=tinysrgb&w=600",
+    date: "15 Jan 2020 • By Pastor Campbell",
+    title: "Selling  through adversity",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+  },
+  {
+    grid:3,
+    id: 7,
+    poster: "https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&w=600",
+    date: "15 Jan 2020 • By Pastor Campbell",
+    title: "Why should the  customer buy from  you ?(Special offers ) ( customer service ) ( price )",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+  },
+  {
+    grid:1.5
+  },
+  {
+    grid:3,
+    id: 8,
+    poster: "https://images.pexels.com/photos/5054213/pexels-photo-5054213.jpeg?auto=compress&cs=tinysrgb&w=600",
+    date: "15 Jan 2020 • By Pastor Campbell",
+    title: "Leaving the door 'open' for future call back / recomedation",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+  },
+  {
+    grid:3,
+    id: 9,
+    poster: "https://images.pexels.com/photos/4261793/pexels-photo-4261793.jpeg?auto=compress&cs=tinysrgb&w=600",
+    date: "15 Jan 2020 • By Pastor Campbell",
+    title: "Overcoming time to think",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+  },
+  {
+    grid:3,
+    id: 10,
+    poster: "https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?b=1&s=612x612&w=0&k=20&c=6wbE8yYtBdOmwesNj0f3Int-fk9mEfBFiaFgN2kdC58=",
+    date: "15 Jan 2020 • By Pastor Campbell",
+    title: "Closing the deal",
+    description:
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+  }, 
+  {
+    grid:1.5
+  },
+
 ];
 
 export const PRAYERS = [
   {
     id: 1,
-    title: "PEACE WITH GOD",
+    title: "Excellence Online",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+      "Elevate your education with us – where excellence meets online learning.",
   },
   {
     id: 1,
-    title: "PEACE WITH GOD",
+    title: "Agile Academics",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+      "Expert instructors, dynamic lessons, and flexible schedules for your success.",
   },
   {
     id: 1,
-    title: "PEACE WITH GOD",
+    title: "Top-Tier Learning",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+      "Choose a top-tier online academy committed to your academic journey.",
   },
   {
     id: 1,
-    title: "PEACE WITH GOD",
+    title: "SmartEd Hub",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+      "Join us for a transformative learning experience – education redefined.",
   },
 ];
 

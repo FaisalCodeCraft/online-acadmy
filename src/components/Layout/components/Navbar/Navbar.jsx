@@ -17,14 +17,24 @@ const Navbar = () => {
 
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [bgColor, setBgColor] = React.useState(false)
+  const [color, setColor] = React.useState(false)
+  
   const changeBgColor = () => {
-    if (window.scrollY >= 500) {
+    if (window.scrollY >= 450) {
       setBgColor(true)
     } else (
       setBgColor(false)
     )
   }
   window.addEventListener("scroll", changeBgColor)
+  const changeColor = () => {
+    if (window.scrollY >= 450) {
+      setColor(true)
+    } else (
+      setColor(false)
+    )
+  }
+  window.addEventListener("scroll", changeColor)
 
 
   const handleDrawerToggle = (_) => setMobileOpen((prevState) => !prevState);
@@ -74,7 +84,7 @@ const Navbar = () => {
 
   return (
     <Box >
-      <AppBar component="nav" sx={{ bgcolor: bgColor && mode == "light" ? "black" : bgColor && mode == "dark" ? "white" : "transparent", color: mode === "dark" ? "black" : "white ", boxShadow: "none" }}>
+      <AppBar component="nav" sx={{ bgcolor: bgColor && mode == "light" ? "black" : bgColor && mode == "dark" ? "white" : "transparent", color:color && mode === "dark" ? "black" : "white ", boxShadow: "none" }}>
         <Container maxWidth={"lg"}>
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             <IconButton
@@ -82,7 +92,7 @@ const Navbar = () => {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ display: { sm: "none" }, color: "white" }}
+              sx={{ display: { sm: "flex",md:"none" }, color:mode=="light"? "white":"black" }}
             >
               <MenuIcon />
             </IconButton>
@@ -99,7 +109,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Home"
-                  sx={{ color: mode === "dark" ? "black" : " white", textDecoration: "none", fontSize: "1.4em", fontWeight: 700 }}
+                  sx={{ color:color && mode === "dark" ? "black" : " white", textDecoration: "none", fontSize: "1.4em", fontWeight: 700 }}
                 >
                   ByFaith
                 </Link>
@@ -116,7 +126,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/About"
-                  sx={{ color: mode === "dark" ? "black" : "white ", textDecoration: "none" }}
+                  sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   About
                 </Link>
@@ -124,7 +134,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Sermon"
-                  sx={{ color: mode === "dark" ? "black" : "white ", textDecoration: "none" }}
+                  sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Sermon
                 </Link>
@@ -132,7 +142,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Ministries"
-                  sx={{ color: mode === "dark" ? "black" : "white ", textDecoration: "none" }}
+                  sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Ministries
                 </Link>
@@ -140,7 +150,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Events"
-                  sx={{ color: mode === "dark" ? "black" : "white ", textDecoration: "none" }}
+                  sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Events
                 </Link>
@@ -148,7 +158,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Contact"
-                  sx={{ color: mode === "dark" ? "black" : "white ", textDecoration: "none" }}
+                  sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Contact
                 </Link>

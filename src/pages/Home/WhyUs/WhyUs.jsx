@@ -19,7 +19,7 @@ const WhyUs = () => {
                 fontSize={{ md: "2.6em" }}
                 fontWeight={900}
               >
-                You matter to God, you matter to us.
+                SmartChoice: Elevate Your Education Online
               </Typography>
 
               <img
@@ -33,10 +33,8 @@ const WhyUs = () => {
           <Grid item md={6} >
             <Container>
             <Typography pt={{md:4}}>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean.
+            Our courses stand out with expertly curated content interactive learning experiences and real life applications </Typography>
+            <Typography>By signing with us you will join a community  of motivated learners recieve personalised  support at the same time boost yourself confident and motivate you to make that sale .
             </Typography>
             <Grid
               container

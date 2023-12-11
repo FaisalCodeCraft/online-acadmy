@@ -5,29 +5,27 @@ const About = () => {
   return (
     <Box py={{ md: 16 }}>
       <Container maxWidth="lg">
-        <Grid container px={{md:6}} alignItems={"center"}>
+        <Grid container px={{ md: 6 }} alignItems={"center"}>
           <Grid item md={6}>
-            <Box width={{md:"350px"}}>
-              <Typography color={"#ff9800"} fontWeight={500} pt={{md:0,xs:8}}>
+            <Box width={{ md: "350px" }}>
+              <Typography color={"#ff9800"} fontWeight={500} pt={{ md: 0, xs: 8 }}>
                 ABOUT US
               </Typography>
               <Typography
-                py={{md:4,sm:3,xs:2}}
-                fontSize={{ md: "3em",sm:"2.3em",xs:"1.5em" }}
-                fontWeight={1000}
-                lineHeight={{md:"50px",xs:"30px"}}
-                width={{md:"260px"}}
+                py={{ md: 4, sm: 3, xs: 2 }}
+                fontSize={{ md: "2.5em", sm: "2.3em", xs: "1.5em" }}
+                fontWeight={700}
+                lineHeight={{ md: "50px", xs: "30px" }}
+                width={{ md: "300px" }}
               >
-                Living and Sharing The Gospel
+                My name is Stephen bastien AKA  Steve b
               </Typography>
               <Typography color={"gray"}>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+                Founder and sole proprietor  of ADATOS ( a different approach to sale )
+                I'm a passionate  and dedicated individual with a very diverse background in sales both in UK and abroad spanning over 20 years .
               </Typography>
               <Typography pt={4} color={"gray"}>
-                A small river named Duden flows by their place and supplies it
-                with the necessary regelialia. It is a paradisematic country, in
-                which roasted parts of sentences fly into your mouth.
+                ADATOS is more than a business; it's a commitment to innovation and excellence in every sales endeavor. Join me on this exciting journey of transforming the sales landscape with a fresh perspective and unwavering enthusiasm.
               </Typography>
               <Button
                 sx={{

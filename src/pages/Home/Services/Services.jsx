@@ -56,15 +56,15 @@ const Services = () => {
       </Container>
       </Box>
 
-      <Box bgcolor={"rgb(0, 72, 96)"} py={8} color={"white"} mt={"-3em"} position={"relative" }
+      <Box bgcolor={"rgb(0, 72, 96)"} py={{md:8}} color={"white"} mt={"-3em"} position={"relative" }
       >
         <Container maxWidth="lg">
         <Grid container spacing={5} justifyContent={"center"} py={{md:8}} >
           <Grid item md={10.5} >
             <Typography
-              py={1}
-              pb={5}
-              fontSize={{ md: "3em", sm: "2em", xs: "1.6em" }}
+              py={{md:1}}
+              pb={{md:5}}
+              fontSize={{ md: "3em", sm: "2em", xs: "1em" }}
               fontWeight={900}
             >
               Join with us as we worship the Lord
@@ -73,7 +73,8 @@ const Services = () => {
           <Grid item md={1.5}>
             <Button
               sx={{
-                my: 4,
+                my: {md:4,sm:2,xs:1},
+                
                 bgcolor: "#ff9800",
                 color: "white",
                 borderRadius: "28px",

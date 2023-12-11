@@ -1,56 +1,53 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Divider, Grid, Typography, useMediaQuery } from "@mui/material";
 import { SERMONS } from "constants/contents/data";
-import React from "react";
+import { ThemeContext } from "context";
+import React, { useContext } from "react";
 
 const Sermon = () => {
+
+  const { mode } = useContext(ThemeContext)
+
   return (
-    <Box pb={{md:12}}>
-      <Container maxWidth="lg">
-        <Box px={{md:6,xs:1}} textAlign={"center"} py={{md:6,xs:2}} pt={{md:0,xs:9}}>
-          <Typography color={"#ff9800"} fontWeight={500}>
-            SERMONS
-          </Typography>
-          <Typography py={1} fontSize={{ md: "3em",sm:"2em",xs:"1.8em" }} fontWeight={900}>
-            Recent Sermons
-          </Typography>
-        </Box>
-        <Grid container spacing={{md:4,sm:3,xs:2}} px={{md:3}}>
-          {SERMONS.map((item) => (
-            <Grid item md={4} sm={6}>
-              <img
-                src={item.poster}
-                alt="students"
-                width={"100%"}
-                style={{ borderRadius: "10px" }}
-              />
-              <Box p={{md:3,sm:2,xs:1}}>
-                <Typography color={"gray"}>{item.date}</Typography>
-                <Typography py={1} fontSize={"1.3em"} fontWeight={500}>{item.title}</Typography>
-                <Typography color={"gray"}>{item.description}</Typography>
-                <Button
-                  sx={{
-                    my: 4,
-                    bgcolor: "#ff9800",
-                    color: "white",
-                    borderRadius: "28px",
-                    p: "10px 20px",
-                    fontWeight: 600,
-                    fontSize: "small",
-                    "&:hover": {
-                      bgcolor: "white",
-                      color: "#ff9800",
-                      boxShadow: "3px 5px 20px 2px gray",
-                    },
-                  }}
-                >
-                  READ MORE
-                </Button>
-              </Box>
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
-    </Box>
+    <React.Fragment>
+      <Divider sx={{ backgroundColor: 'gray', mb: 6, mx: 10 }} />
+      <Box pb={8} >
+        <Container maxWidth="md" sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+          <Box px={{ xs: 1 }} textAlign={"center"} py={{ md: 6, xs: 2 }} pt={{ md: 0, xs: 9 }}>
+            <Typography color={"#ff9800"} fontWeight={500}>
+              COURSES
+            </Typography>
+            <Typography py={1} fontSize={{ md: "3em", sm: "2em", xs: "1.8em" }} fontWeight={900}>
+              Our Courses
+            </Typography>
+          </Box>
+          <Grid container spacing={{ md: 3, sm: 3, xs: 2 }}>
+            {SERMONS.map((item) => (
+              <Grid item md={item.grid} sm={6} xs={12} display={{sm:item?.id?"flex":"none",md:'flex'}}>
+                {item?.title && <Box bgcolor={"black"} borderRadius={"50%"} position={"relative"} display={"flex"}  alignItems={"center"} justifyContent={"center"} width={"100%"} height={{ md: "200px", xs: '250px',sm:"300px" }} >
+                  <Box
+                    position={"absolute"}
+                    // zIndex={-1}
+
+                    sx={{ opacity: .5 }}
+                    width={"100%"}
+                    height={{ md: "200px", xs: '250px',sm:"300px" }}
+                    border={mode === 'dark' ? '2px solid white' : 'none'}
+                    borderRadius={"50%"}
+                    src={item?.poster}
+                    component='img'
+
+                  >
+
+                  </Box >
+                  <Typography p={2} zIndex={999} color={"white"} textAlign={'center'}>{item.title}</Typography>
+                </Box>
+                }
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </Box >
+    </React.Fragment>
   );
 };
 
