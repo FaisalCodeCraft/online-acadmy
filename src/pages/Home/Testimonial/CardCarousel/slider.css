@@ -149,7 +149,7 @@
 }
 
 
-@media screen and(max-width:500px) {
+@media screen and (max-width:500px) {
   @keyframes prev {
     from {
       transform: translateX(0px);
@@ -165,26 +165,6 @@
     }
     to {
       transform: translateX(calc(0px + 108vw));
-    }
-  }
-}
-
-@media screen and (min-width:550px) {
-  @keyframes prev {
-    from {
-      transform: translateX(0px);
-    }
-    to {
-      transform: translateX(calc(0px - 60.5vw));
-    }
-  }
-  
-  @keyframes next {
-    from {
-      transform: translateX(0px);
-    }
-    to {
-      transform: translateX(calc(0px + 60.5vw));
     }
   }
 }
