@@ -20,7 +20,7 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [bgColor, setBgColor] = React.useState(false)
   const [color, setColor] = React.useState(false)
-  
+
   const changeBgColor = () => {
     if (window.scrollY >= 450) {
       setBgColor(true)
@@ -44,7 +44,7 @@ const Navbar = () => {
   //   setMobileOpen((prevState) => !prevState);
   // }
 
- 
+
 
 
   const drawer = (
@@ -57,7 +57,7 @@ const Navbar = () => {
       <List>
         <ListItem>
           <Link
-          
+
             href="/Home"
             sx={{ color: "black", textDecoration: "none" }}
           >
@@ -76,7 +76,7 @@ const Navbar = () => {
         </ListItem>
         <ListItem>
           <Link href="#whyUS" sx={{ color: "black", textDecoration: "none" }}>
-           WhyUs
+            WhyUs
           </Link>
         </ListItem>
         <ListItem>
@@ -95,7 +95,7 @@ const Navbar = () => {
 
   return (
     <Box >
-      <AppBar component="nav" sx={{ bgcolor: bgColor && mode == "light" ? "black" : bgColor && mode == "dark" ? "white" : "transparent", color:color && mode === "dark" ? "black" : "white ", boxShadow: "none" }}>
+      <AppBar component="nav" sx={{ bgcolor: bgColor && mode == "light" ? "black" : bgColor && mode == "dark" ? "white" : "transparent", color: color && mode === "dark" ? "black" : "white ", boxShadow: "none" }}>
         <Container maxWidth={"lg"}>
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             <IconButton
@@ -103,7 +103,7 @@ const Navbar = () => {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ display: { sm: "flex",md:"none" }, color:mode=="light"? "white":"black" }}
+              sx={{ display: { sm: "flex", md: "none" }, color: mode == "light" ? "white" : "black" }}
             >
               <MenuIcon />
             </IconButton>
@@ -120,7 +120,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Home"
-                  sx={{ color:color && mode === "dark" ? "black" : " white", textDecoration: "none", fontSize: "1.4em", fontWeight: 700 }}
+                  sx={{ color: color && mode === "dark" ? "black" : " white", textDecoration: "none", fontSize: "1.4em", fontWeight: 700 }}
                 >
                   ByFaith
                 </Link>
@@ -134,10 +134,10 @@ const Navbar = () => {
               <ListItem>
                 <ModeToggle />
               </ListItem>
-              <ListItem>
+              <ListItem> 
                 <Link
                   href="#about"
-                  sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
+                  sx={{ color: color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   About
                 </Link>
@@ -145,7 +145,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="#courses"
-                  sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
+                  sx={{ color: color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Courses
                 </Link>
@@ -153,7 +153,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="#whyUs"
-                  sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
+                  sx={{ color: color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   WhyUs
                 </Link>
@@ -161,7 +161,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="#services"
-                  sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
+                  sx={{ color: color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Services
                 </Link>
@@ -169,7 +169,7 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="#contact"
-                  sx={{ color:color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
+                  sx={{ color: color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}
                 >
                   Contact
                 </Link>

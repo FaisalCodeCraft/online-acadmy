@@ -18,33 +18,16 @@ const About = () => {
                 lineHeight={{ md: "50px", xs: "30px" }}
                 width={{ md: "300px" }}
               >
-                My name is Stephen bastien AKA  Steve b
+                My name is Stephen Aastien a.k.a  Stevie b
               </Typography>
               <Typography color={"gray"}>
-                Founder and sole proprietor  of ADATOS ( a different approach to sale )
-                I'm a passionate  and dedicated individual with a very diverse background in sales both in UK and abroad spanning over 20 years .
+                Founder and sole proprietor  of ADATOS ( a different approach to sales )
+                I am a passionate  and dedicated individual with a very diverse background in sales both in the UK and abroad spanning over 20 years .
               </Typography>
               <Typography pt={4} color={"gray"}>
-                ADATOS is more than a business; it's a commitment to innovation and excellence in every sales endeavor. Join me on this exciting journey of transforming the sales landscape with a fresh perspective and unwavering enthusiasm.
+                ADATOS is more than a business; it is a commitment to innovation and excellence in every sales endeavour. Join me on this exciting journey of transforming the sales landscape with a fresh perspective and unwavering enthusiasm.
               </Typography>
-              <Button
-                sx={{
-                  my: 4,
-                  bgcolor: "#ff9800",
-                  color: "white",
-                  borderRadius: "28px",
-                  p: "10px 20px",
-                  fontWeight: 600,
-                  fontSize: "small",
-                  "&:hover": {
-                    bgcolor: "white",
-                    color: "#ff9800",
-                    boxShadow: "3px 5px 20px 2px gray",
-                  },
-                }}
-              >
-                GO TO SERMONS
-              </Button>
+             
             </Box>
           </Grid>
           <Grid item md={6}>

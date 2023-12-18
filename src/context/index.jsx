@@ -3,7 +3,7 @@ import { Box } from '@mui/material'
 
 
 export const ThemeContext = createContext()
-const ThemeProvider = ({children}) => {
+const ThemeProvider = ({ children }) => {
     const [mode, setMode] = useState("light")
 
     const ToggleMode = () => {
@@ -11,8 +11,8 @@ const ThemeProvider = ({children}) => {
     }
     return (
         <ThemeContext.Provider value={{ mode, setMode, ToggleMode }}>
-<Box sx={{bgcolor:mode==="light"?"rgb(255, 248, 236)" :"black",color:mode=== "light" ? "black" :"white"}}>{children}</Box>
-            
+            <Box sx={{ bgcolor: mode === "light" ? "rgb(255, 248, 236)" : "black", color: mode === "light" ? "black" : "white" }}>{children}</Box>
+
         </ThemeContext.Provider>
     )
 }
