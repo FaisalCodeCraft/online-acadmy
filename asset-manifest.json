@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/online-acadmy/static/css/main.f83d0407.css",
-    "main.js": "/online-acadmy/static/js/main.32efba22.js",
+    "main.css": "/online-acadmy/static/css/main.de790d41.css",
+    "main.js": "/online-acadmy/static/js/main.e0e43b10.js",
     "static/media/Picsart_23-12-19_12-43-15-457.png": "/online-acadmy/static/media/Picsart_23-12-19_12-43-15-457.a0fb1b014df17c34fe4e.png",
     "static/media/roboto-latin-900italic.woff": "/online-acadmy/static/media/roboto-latin-900italic.c20d916c1a1b094c1cec.woff",
     "static/media/roboto-latin-300italic.woff": "/online-acadmy/static/media/roboto-latin-300italic.bd5b7a13f2c52b531a2a.woff",
@@ -28,11 +28,11 @@
     "static/media/roboto-latin-400.woff2": "/online-acadmy/static/media/roboto-latin-400.176f8f5bd5f02b3abfcf.woff2",
     "static/media/roboto-latin-900.woff2": "/online-acadmy/static/media/roboto-latin-900.870c8c1486f76054301a.woff2",
     "index.html": "/online-acadmy/index.html",
-    "main.f83d0407.css.map": "/online-acadmy/static/css/main.f83d0407.css.map",
-    "main.32efba22.js.map": "/online-acadmy/static/js/main.32efba22.js.map"
+    "main.de790d41.css.map": "/online-acadmy/static/css/main.de790d41.css.map",
+    "main.e0e43b10.js.map": "/online-acadmy/static/js/main.e0e43b10.js.map"
   },
   "entrypoints": [
-    "static/css/main.f83d0407.css",
-    "static/js/main.32efba22.js"
+    "static/css/main.de790d41.css",
+    "static/js/main.e0e43b10.js"
   ]
 }
