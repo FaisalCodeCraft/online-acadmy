@@ -7,6 +7,7 @@
   --color-ui: #999; /* UI color */
   --color-ui-hover: #666; /* UI color on hover */
   --cardWidth: calc(225vw / var(--up)); /* Width of each card */
+  --cardWidthSmallScreen: calc(970vw / var(--up)); /* Width of each card */
   --carouselWidth: calc(
     var(--cardWidth) * var(--num)
   ); /* Width of the entire carousel */
@@ -155,7 +156,7 @@
       transform: translateX(0px);
     }
     to {
-      transform: translateX(calc(0px - 108vw));
+      transform: translateX(calc(0px - 77.3vw));
     }
   }
   
@@ -164,7 +165,11 @@
       transform: translateX(0px);
     }
     to {
-      transform: translateX(calc(0px + 108vw));
+      transform: translateX(calc(0px + 77.3vw));
     }
+  }
+  .carousel {
+    width: var(--cardWidthSmallScreen);
+ 
   }
 }
