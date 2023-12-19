@@ -7,7 +7,7 @@ const WhatsAppCom = () => {
     <Box >
       <Button >
         <Link href="https://wa.me/+447522063381">
-        <WhatsApp sx={{ color: "#00a152", fontSize: "4em",borderRadius:"50%" }} />
+        <WhatsApp sx={{ color: "white",bgcolor:"#00a040",p:.6, fontSize: "3.5em",borderRadius:"50%" }} />
         </Link>
       </Button>
     </Box>
