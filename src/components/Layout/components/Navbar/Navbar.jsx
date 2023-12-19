@@ -120,9 +120,10 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Home"
-                  sx={{ color: color && mode === "dark" ? "black" : " white", textDecoration: "none",  }}
+                  sx={{ display: "flex", alignItems: "center", color: color && mode === "dark" ? "black" : " white", textDecoration: "none", }}
                 >
-                  <img src={logo} alt=""  style={{width:"50px",height:"50px"}} />
+                  <img src={logo} alt="" style={{ width: "45px", height: "45px" }} />
+                  <Typography px={1} fontWeight={700}>ADATOS</Typography>
                 </Link>
               </ListItem>
             </List>
@@ -134,7 +135,7 @@ const Navbar = () => {
               <ListItem>
                 <ModeToggle />
               </ListItem>
-              <ListItem> 
+              <ListItem>
                 <Link
                   href="#about"
                   sx={{ color: color && mode === "dark" ? "black" : "white ", textDecoration: "none" }}

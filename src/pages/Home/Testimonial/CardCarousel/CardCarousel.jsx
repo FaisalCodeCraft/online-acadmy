@@ -7,7 +7,7 @@ import { ThemeContext } from "context";
 // Card component for slider
 export const Card = ({ name, copy, title, profile, person, mode }) => (
 
-  <Box width={{ md: "520px", sm: "400px", xs: "300px" }}  boxShadow={mode==="dark"?"3px 3px 5px 5px rgba(255,255,255,0.35)":3} m={{ md: 3, sm: 1 }} p={3} textAlign={"center"} sx={{ backgroundColor: mode === "light" ? "white" : "black" }}>
+  <Box width={{ md: "520px", sm: "400px", xs: "300px" }} borderRadius={5}  boxShadow={mode==="dark"?"1px 5px 37px gray":"1px 5px 30px gray"} m={{ md: 3, sm: 1 }} p={3} textAlign={"center"} sx={{ backgroundColor: mode === "light" ? "white" : "black" }}>
    <div className="card"> <h4>{title}</h4>
     <p className="description">{copy}</p>
     <img className="personImg" src={profile} alt="Man" />
