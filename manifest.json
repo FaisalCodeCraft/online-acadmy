@@ -3,17 +3,17 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "https://www.vectorstock.com/royalty-free-vectors/online-academy-logo-vectors",
+      "src": "./logo/Picsart_23-12-19_12-43-15-457.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "https://www.vectorstock.com/royalty-free-vectors/online-academy-logo-vectors",
+      "src": "./logo/Picsart_23-12-19_12-43-15-457.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "./logo/Picsart_23-12-19_12-43-15-457.png",
       "type": "image/png",
       "sizes": "512x512"
     }
