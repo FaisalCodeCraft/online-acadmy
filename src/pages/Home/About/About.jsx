@@ -7,15 +7,15 @@ const About = () => {
       <Container maxWidth="lg">
         <Grid container px={{ md: 6 }} alignItems={"center"}>
           <Grid item md={6}>
-            <Box width={{ md: "350px" }}>
+            <Box width={{ md: "400px" }}>
               <Typography color={"#ff9800"} fontWeight={500} pt={{ md: 0, xs: 8 }}>
                 ABOUT US
               </Typography>
               <Typography
                 py={{ md: 4, sm: 3, xs: 2 }}
-                fontSize={{ md: "2.5em", sm: "2.3em", xs: "1.5em" }}
-                fontWeight={700}
-                lineHeight={{ md: "50px", xs: "30px" }}
+                fontSize={{ md: "2.3em", sm: "2.3em", xs: "1.5em" }}
+                fontWeight={800}
+                lineHeight={{ md: "40px", xs: "30px" }}
                 width={{ md: "300px" }}
               >
                 My name is Stephen Aastien a.k.a  Stevie b

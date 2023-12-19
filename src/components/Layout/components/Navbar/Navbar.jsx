@@ -11,7 +11,7 @@ import { Button, Container, Link, Typography } from "@mui/material";
 import { AccountCircle } from "@mui/icons-material";
 import ModeToggle from "components/ModeToggle/ModeToggle";
 import { ThemeContext } from "context";
-import { useNavigate } from "react-router-dom";
+import logo from "../../../../logo/Picsart_23-12-19_12-43-15-457.png"
 
 
 const Navbar = () => {
@@ -120,9 +120,9 @@ const Navbar = () => {
               <ListItem>
                 <Link
                   href="/Home"
-                  sx={{ color: color && mode === "dark" ? "black" : " white", textDecoration: "none", fontSize: "1.4em", fontWeight: 700 }}
+                  sx={{ color: color && mode === "dark" ? "black" : " white", textDecoration: "none",  }}
                 >
-                  ByFaith
+                  <img src={logo} alt=""  style={{width:"50px",height:"50px"}} />
                 </Link>
               </ListItem>
             </List>

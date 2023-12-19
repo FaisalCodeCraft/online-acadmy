@@ -27,7 +27,7 @@ const Header = () => {
           <Grid container justifyContent={"center"} alignItems={"center"} px={{md:4}}>
             <Grid item md={7} sm={6}>
               <Box color={{md:"white",sm:"white"}} width={"300px"} pt={1}>
-                <Typography>WELCOME TO BYFAITH CHURCH</Typography>
+                <Typography>WELCOME TO ADATOS</Typography>
                 <Typography
                   py={{md:3}}
                   fontSize={{ md: "2.7em",sm:"2em" }}
@@ -40,23 +40,7 @@ const Header = () => {
                   Far far away, behind the word mountains, far from the
                   countries Vokalia and Consonantia, there live the blind texts.
                 </Typography>
-                <Button
-                  sx={{
-                    my: 3,
-                    bgcolor: "#ff9800",
-                    color: "white",
-                    borderRadius: "28px",
-                    p: "10px 20px",
-                    fontWeight: 600,
-                    fontSize: "small",
-                    "&:hover":{
-                      bgcolor:"white",
-                      color:"#ff9800"
-                    }
-                  }}
-                >
-                  GO TO SERMONS
-                </Button>
+               
               </Box>
             </Grid>
             <Grid item md={5}  pl={{md:5}}>

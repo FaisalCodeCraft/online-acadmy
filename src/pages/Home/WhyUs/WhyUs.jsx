@@ -47,7 +47,7 @@ const WhyUs = () => {
                   <Typography color={"gray"} fontSize={"14px"}>{item.description}</Typography>
                 </Grid>
               ))}
-              <Button
+              {/* <Button
                 sx={{
                   my: 4,
                   bgcolor: "#ff9800",
@@ -64,7 +64,7 @@ const WhyUs = () => {
                 }}
               >
                 SEND US YOUR PRAYER REQUEST
-              </Button>
+              </Button> */}
 
             </Grid>
             </Container>
