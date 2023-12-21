@@ -18,7 +18,7 @@ const About = () => {
                 lineHeight={{ md: "40px", xs: "30px" }}
                 width={{ md: "300px" }}
               >
-                My name is Stephen Aastien a.k.a  Stevie b
+                My name is Stephen Bastien a.k.a  Stevie b
               </Typography>
               <Typography color={"gray"}>
                 Founder and sole proprietor  of ADATOS ( a different approach to sales )
