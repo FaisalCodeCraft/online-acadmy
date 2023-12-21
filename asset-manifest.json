@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/online-acadmy/static/css/main.de790d41.css",
-    "main.js": "/online-acadmy/static/js/main.85048f41.js",
+    "main.js": "/online-acadmy/static/js/main.120fdaa1.js",
     "static/media/Picsart_23-12-19_12-43-15-457.png": "/online-acadmy/static/media/Picsart_23-12-19_12-43-15-457.a0fb1b014df17c34fe4e.png",
     "static/media/roboto-latin-900italic.woff": "/online-acadmy/static/media/roboto-latin-900italic.c20d916c1a1b094c1cec.woff",
     "static/media/roboto-latin-300italic.woff": "/online-acadmy/static/media/roboto-latin-300italic.bd5b7a13f2c52b531a2a.woff",
@@ -29,10 +29,10 @@
     "static/media/roboto-latin-900.woff2": "/online-acadmy/static/media/roboto-latin-900.870c8c1486f76054301a.woff2",
     "index.html": "/online-acadmy/index.html",
     "main.de790d41.css.map": "/online-acadmy/static/css/main.de790d41.css.map",
-    "main.85048f41.js.map": "/online-acadmy/static/js/main.85048f41.js.map"
+    "main.120fdaa1.js.map": "/online-acadmy/static/js/main.120fdaa1.js.map"
   },
   "entrypoints": [
     "static/css/main.de790d41.css",
-    "static/js/main.85048f41.js"
+    "static/js/main.120fdaa1.js"
   ]
 }
