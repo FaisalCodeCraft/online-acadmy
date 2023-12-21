@@ -133,7 +133,7 @@ const Navbar = () => {
               }}
             >
               <ListItem>
-                <ModeToggle />
+                <ModeToggle  />
               </ListItem>
               <ListItem>
                 <Link

@@ -9,7 +9,7 @@ const ModeToggle = () => {
   return (
     <div   onClick={ToggleMode}>
         
-        <ListItem >
+        <ListItem sx={{cursor:"pointer"}}>
           {mode=="light" ? <DarkMode/>:<LightMode/>}
         </ListItem>
     </div>
