@@ -7,8 +7,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import { Button, Container, Link, Typography } from "@mui/material";
-import { AccountCircle } from "@mui/icons-material";
+import {  Container, Link, Typography } from "@mui/material";
 import ModeToggle from "components/ModeToggle/ModeToggle";
 import { ThemeContext } from "context";
 import logo from "../../../../logo/Picsart_23-12-19_12-43-15-457.png"
@@ -95,7 +94,7 @@ const Navbar = () => {
 
   return (
     <Box >
-      <AppBar component="nav" sx={{ bgcolor: bgColor && mode == "light" ? "black" : bgColor && mode == "dark" ? "white" : "transparent", color: color && mode === "dark" ? "black" : "white ", boxShadow: "none" }}>
+      <AppBar component="nav" sx={{ bgcolor: bgColor && mode === "light" ? "black" : bgColor && mode === "dark" ? "white" : "transparent", color: color && mode === "dark" ? "black" : "white ", boxShadow: "none" }}>
         <Container maxWidth={"lg"}>
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             <IconButton
@@ -103,7 +102,7 @@ const Navbar = () => {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ display: { sm: "flex", md: "none" }, color: mode == "light" ? "white" : "black" }}
+              sx={{ display: { sm: "flex", md: "none" }, color: mode === "light" ? "white" : "black" }}
             >
               <MenuIcon />
             </IconButton>

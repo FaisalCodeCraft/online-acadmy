@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { DarkMode, LightMode } from '@mui/icons-material'
 import { ThemeContext } from 'context'
 import { ListItem } from '@mui/material'
@@ -10,7 +10,7 @@ const ModeToggle = () => {
     <div   onClick={ToggleMode}>
         
         <ListItem sx={{cursor:"pointer"}}>
-          {mode=="light" ? <DarkMode/>:<LightMode/>}
+          {mode==="light" ? <DarkMode/>:<LightMode/>}
         </ListItem>
     </div>
   )

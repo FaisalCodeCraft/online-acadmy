@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Language, LinkedIn, Pinterest, Twitter } from "@mui/icons-material";
+import { Facebook, Instagram, LinkedIn, Pinterest, Twitter } from "@mui/icons-material";
 import {
   Box,
   Container,
