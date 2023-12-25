@@ -22,7 +22,7 @@ const Footer = () => {
               </ListItem>
               <ListItem>10 giouri kangari 23 5330agia napa cyprus</ListItem>
               <ListItem>+447522063381</ListItem>
-              <ListItem>Basfax11@gmail.com</ListItem>
+              <ListItem>Steviebas2011@hotmail.com</ListItem>
             </List>
           </Grid>
           <Grid item md={1.5}>
@@ -56,7 +56,7 @@ const Footer = () => {
               <ListItem>Our Vision</ListItem>
               <ListItem>About us</ListItem>
               <ListItem>+447522063381</ListItem>
-              <ListItem>Basfax11@gmail.com</ListItem>
+              <ListItem>Steviebas2011@hotmail.com</ListItem>
               <ListItem>Contact us</ListItem>
             </List>
             <Box display={"flex"} flexWrap={"wrap"} alignItems={"center"}>
